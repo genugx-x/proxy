@@ -1,6 +1,7 @@
 package com.genug.proxy;
 
 import com.genug.proxy.config.v2_dynamicproxy.DynamicProxyBasicConfig;
+import com.genug.proxy.config.v2_dynamicproxy.DynamicProxyFilterConfig;
 import com.genug.proxy.config.v2_proxy.ConcreteProxyConfig;
 import com.genug.proxy.trace.logtrace.LogTrace;
 import com.genug.proxy.trace.logtrace.ThreadLocalLogTrace;
@@ -12,7 +13,8 @@ import org.springframework.context.annotation.Import;
 //@Import({AppV1Config.class, AppV2Config.class})
 //@Import(InterfaceProxyConfig.class)
 // @Import(ConcreteProxyConfig.class)
-@Import(DynamicProxyBasicConfig.class)
+// @Import(DynamicProxyBasicConfig.class)
+@Import(DynamicProxyFilterConfig.class)
 @SpringBootApplication(scanBasePackages = "com.genug.proxy.app")
 public class ProxyApplication {
     public static void main(String[] args) {
