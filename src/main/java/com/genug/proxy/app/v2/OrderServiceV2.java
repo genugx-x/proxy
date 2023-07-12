@@ -1,8 +1,6 @@
 package com.genug.proxy.app.v2;
 
-import com.genug.proxy.app.v1.OrderServiceV1;
-
-public class OrderServiceV2 implements OrderServiceV1 {
+public class OrderServiceV2 {
 
     private final OrderRepositoryV2 orderRepositoryV2;
 

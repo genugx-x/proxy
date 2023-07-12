@@ -7,8 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Slf4j
-@RequestMapping
 @ResponseBody
+@RequestMapping
 public class OrderControllerV2 {
     private final OrderServiceV2 orderServiceV2;
 
